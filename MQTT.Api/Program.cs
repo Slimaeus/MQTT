@@ -49,8 +49,9 @@ builder.Services.AddSingleton(provider =>
     }
 });
 
-builder.Services.AddHostedService<HelloConsumer>();
-builder.Services.AddHostedService<HelloPublisher>();
+//builder.Services.AddHostedService<HelloConsumer>();
+//builder.Services.AddHostedService<HelloPublisher>();
+builder.Services.AddHostedService<LocationConsumer>();
 
 var app = builder.Build();
 
